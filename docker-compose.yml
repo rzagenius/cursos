@@ -1,0 +1,10 @@
+version: "3.2"
+
+services:
+ v6:
+  image: webdevops/php-nginx:5.6
+  volumes:
+    - ./repo:/app
+    - ./nginx/conf.d:/opt/docker/etc/nginx/conf.d
+  ports:
+    - 80:80
